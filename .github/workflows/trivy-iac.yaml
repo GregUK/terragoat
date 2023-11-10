@@ -4,15 +4,15 @@
       pull_request:
         types: [ opened, reopened, synchronize ]
         paths:
-          - "**/*.tf"
-          - "**/*.tfvars"
+        #   - "**/*.tf"
+        #   - "**/*.tfvars"
     
       push:
         branches:
           - main
         paths:
-          - "**/*.tf"
-          - "**/*.tfvars"
+        #   - "**/*.tf"
+        #   - "**/*.tfvars"
     
     jobs:
       trivy:
