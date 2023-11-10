@@ -1,0 +1,12 @@
+---
+# Trivy provides a number of mechanisms to filter findings based upo
+# the severity, type etc.
+# https://github.com/aquasecurity/trivy/blob/main/docs/docs/configuration/filtering.md#filtering
+vulnerabilities:
+
+misconfigurations:
+  - severity: CRITICAL,HIGH,MEDIUM,LOW
+
+secrets:
+
+licenses:
