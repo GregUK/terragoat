@@ -42,6 +42,6 @@
               REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             with:
               reviewdog_version: latest
-              run: |
+            run: |
                 reviewdog -f=sarif -diff="git diff" -reporter=github-pr-check -level=WARNING
     
