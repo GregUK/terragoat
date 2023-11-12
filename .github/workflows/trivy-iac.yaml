@@ -34,7 +34,7 @@
             uses: aquasecurity/trivy-action@master
             with:
               scan-type: 'config'
-              hide-progress: false
+              #hide-progress: false
               format: 'sarif'
               output: 'trivy-results.sarif'
               #exit-code: '1'
@@ -43,5 +43,5 @@
           
           - name: Reviewdog comment IAC checks
             run: |
-                reviewdog -f=sarif -diff="git diff" -reporter=github-pr-check -level=WARNING
-    
+                reviewdog -f=sarif -diff="git diff" -reporter=github-pr-check
+  
